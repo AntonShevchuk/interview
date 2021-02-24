@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Собеседование</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
@@ -9,202 +9,389 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .black {
+            color: white;
+        }
+        .black h2 {
+            color: #bdbdbd;
+        }
+        .black p.note {
+            color: #999999;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Собеседование</h1>
+        <p>Заметки интервьюера</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide black clear" id="cover">
+        <h2>Собеседование</h2>
+        <p>Рассказывать для вас будет <a href="https://anton.shevchuk.name">Антон Шевчук</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
+            <img class="cover" src="pictures/berries.jpg" alt="Black and white. Berries">
+            <figcaption class="copyright bottom white">
+                <a href="https://photo.hohli.com">© Anton Shevchuk</a>
             </figcaption>
         </figure>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
                 color: white;
-                text-align: center;
+                text-align: right;
                 font-size: 70px;
             }
 
             #cover p {
                 margin: 10px 0 0;
-                text-align: center;
+                text-align: right;
                 color: white;
-                font-style: italic;
                 font-size: 20px;
             }
 
             #cover p a {
                 color: white;
             }
+            #cover img {
+                left: 16%;
+            }
         </style>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+    <section class="slide black clear" id="about">
+        <h2>О себе</h2>
+        <ul>
+            <li>в 2005-м пришёл в web-разработку</li>
+            <li>с 2006-го провожу собеседования в <a href="https://www.nixsolutions.com">NIX</a></li>
+            <li>сформировал два отдела – PHP и Ruby</li>
+            <li>был у истоков JS и CMS отделов</li>
+        </ul>
+        <figure>
+            <img class="place right" src="pictures/photo.jpg" alt="Anton Shevchuk">
+        </figure>
+        <style>
+            #about img {
+                height: 100%
+            }
+        </style>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+    <section class="slide black">
+        <h2 class="shout grow">Первое впечатление</h2>
     </section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
+    <section class="slide black">
+        <h2>CV</h2>
+        <ul>
+            <li>одна страница — хорошо</li>
+            <li>две страницы — лучше</li>
+            <li>три — многовато будет</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>CV</h2>
+        <ul>
+            <li>PDF файл на английском (проверьте с помощью <a href="https://www.grammarly.com/">grammarly</a>)</li>
+            <li>с профессиональной фотографией без фона¹</li>
+            <li>кратко и по делу, рекомендуемую структуру опишу <a href="#structure">чуть позже</a></li>
+            <li>оформление в деловом стиле (emoji в меру)</li>
+            <li>обязательно распечатайте на Ч/Б принтере и посмотрите как выглядит</li>
+        </ul>
+        <p class="note">¹ нет, не та кривая с паспорта</p>
+    </section>
+
+    <section class="slide black">
+        <h2>CV</h2>
+        <ul>
+            <li>PDF файл на английском (проверьте с помощью Grammarly)</li>
+            <li>с профессиональной фотографией без фона¹</li>
+            <li>кратко и по делу, рекомендуемую структуру опишу <a href="#structure">чуть позже</a></li>
+            <li>оформление в деловом стиле (emoji в меру)</li>
+            <li>обязательно распечатайте на Ч/Б принтере и посмотрите как выглядит</li>
+        </ul>
+        <p class="note">¹ нет, не та кривая с паспорта</p>
+        <div class="spotlight" style="
+            --spotlight-radius: 0;
+            --spotlight-opacity: 0.8;
+            --spotlight-width: 1024px;
+            --spotlight-height: 50px;
+            --spotlight-top: 100px;
+        "></div>
+    </section>
+
+    <section class="slide black">
+        <h2>Добавить</h2>
+        <ul>
+            <li>актуальные каналы связи¹</li>
+            <li>аккаунт GitHub, Stack Overflow, LinkedIn²</li>
+            <li>сертификаты</li>
+            <li>уровень владения иностранными языками</li>
+        </ul>
+        <p class="note">
+            ¹ и давайте без этих pink.unicorn.2002 и ICQ<br/>
+            ² «причешите» ваши профили, или лучше не добавляйте их
+        </p>
+    </section>
+
+    <section class="slide black">
+        <h2>Удалить</h2>
+        <ul>
+            <li>ссылки на непрофессиональные соц.сети¹</li>
+            <li>нерелевантный опыт работы²</li>
+        </ul>
+
+        <p class="note">
+            ¹ оставьте ссылку на «одноклассники», чтобы не тратить на вас время<br/>
+            ² опыт в McDonald's это OK, если вы проходите первое собеседования в IT
+        </p>
+    </section>
+
+    <section class="slide black" id="structure">
+        <h2>Рекомендуемая структура</h2>
+        <ul>
+            <li>ФИО + фото</li>
+            <li>кратко о себе, сколько лет в IT, чем занимались, в чём сильны</li>
+            <li>опишите свой скилсет, по каждому будьте готовы к вопросам</li>
+            <li>опыт работы: период, компания, должность</li>
+            <li>проекты: название, описание, технологии, команда, ваша роль</li>
+            <li>образование и сертификаты</li>
+            <li>знание языков</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout grow">Подготовка</h2>
+    </section>
+
+    <section class="slide black">
+        <h2>Напишите эссе по CV 🇺🇦 🇬🇧</h2>
+        <ul>
+            <li>небольшая вводная о себе</li>
+            <li>основной профиль работы</li>
+            <li>какие технологии знаете</li>
+
+            <li>проекты с какими работали</li>
+            <li>какая была команда, ваша роль и зона ответственности</li>
+            <li>какие были челенжи, и даже фейлы</li>
+        </ul>
+    </section>
+
+    <section class="slide black" id="google-questions">
+        <h2>Повторите основы</h2>
+        <figure>
+            <img class="cover" src="pictures/google-it.png" alt="Suggestion by Google">
+        </figure>
+        <p class="note place bottom">как показывает практика, интервьюеры их тоже гуглят 😅</p>
+        <style>
+            #google-questions img {
+                height: 50%;
+            }
+        </style>
+    </section>
+
+    <section class="slide black" id="google-questions-two">
+        <h2>«Глупые» вопросы¹</h2>
+        <figure>
+            <img class="cover" src="pictures/google-it-again.png" alt="Suggestion by Google">
+        </figure>
+        <p class="note place bottom">¹ глупо отвечать на «глупые» вопросы глупо</p>
+        <style>
+            #google-questions-two img {
+                height: 50%;
+            }
+        </style>
+    </section>
+
+    <section class="slide black">
+        <h2>Внешний вид</h2>
+        <ul>
+            <li>опрятность</li>
+            <li>уместность</li>
+            <li>комфорт</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Картинка</h2>
+        <ul>
+            <li>источник света</li>
+            <li>камера</li>
+            <li>микрофон</li>
+            <li>фон</li>
+        </ul>
+
+        <p class="note">отнеситесь как к подготовке стрима, Google подскажет много рецептов 😀</p>
+    </section>
+
+    <section class="slide black">
+        <h2>Вот и настал тот день</h2>
+        <ul>
+            <li>не опаздывать</li>
+            <li>настроиться на позитив</li>
+            <li>проверить микрофон и камеру</li>
+            <li>приготовить рабочее место</li>
+            <li>подготовить интернет-канал (выключить торренты, обновления и т.д.)</li>
+            <li>быть готовым, что попросят зашарить экран</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Да будет тишина</h2>
+        <ul>
+            <li>отключить звук на телефоне</li>
+            <li>сообщить домашним</li>
+            <li>попросить соседей отложить ремонт</li>
+            <li>выгулять собаку заранее</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Будьте здоровы</h2>
+        <ul>
+            <li>не болеть, не кашлять, не чихать</li>
+            <li>заболели — перенесите</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Туалет</h2>
+        <p>сходить заранее!</p>
+    </section>
+
+    <section class="slide black">
+        <h2>Диета</h2>
         <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <ul>
+                <li>алкоголь</li>
+                <li>молочко</li>
+                <li>свежие яблоки</li>
+            </ul>
+            <ul>
+                <li>лук</li>
+                <li>чеснок</li>
+                <li>колбаска</li>
+            </ul>
         </div>
     </section>
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
+    <section class="slide black">
+        <h2>Водичка</h2>
+        <ul>
+            <li>не холодная</li>
+            <li>не сладкая</li>
+            <li>не газированная</li>
+            <li>без алкоголя</li>
+        </ul>
+
+        <p class="note">мой выбор — остывший кофе ☕️</p>
     </section>
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
+    <section class="slide black">
+        <h2 class="shout grow">Поехали</h2>
     </section>
 
-    <section class="slide">
-        <h2>Code samples</h2>
+    <section class="slide black">
+        <h2>Напряги</h2>
+        <div class="columns two">
+            <ul>
+                <li>смотреть в камеру¹</li>
+                <li>смотреть на собеседника</li>
+            </ul>
+            <ul>
+                <li>не печатать на клавиатуре</li>
+                <li>не втыкать в телефон</li>
+            </ul>
+        </div>
+        <p class="note">¹ переместите камеру по возможности️ так, чтобы смотреть в неё всё время, а не в сторону второго монитора</p>
+    </section>
+
+    <section class="slide black">
+        <h2>А теперь вопросы</h2>
+        <ul>
+            <li>почему выбрали именно этот ЯП?</li>
+            <li>опишите плюсы и минусы вашего любимого ЯП</li>
+            <li>что нового в новой версии?</li>
+            <li>с какими фреймворками работали?</li>
+            <li>какой выбрали? почему? продайте его!</li>
+            <li>etc...</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Ещё вопросы</h2>
+        <ul>
+            <li>HTTP?</li>
+            <li>REST?</li>
+            <li>SOLID?</li>
+            <li>ACID</li>
+            <li>etc...</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2>Фронтендер?</h2>
         <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
+            <code><span class="comment">// что это за селектор?</span></code>
+            <code>#my dd.mm.yy, li li a:hover+span{</code>
+            <code>  color: <mark>#f00</mark>; <span class="comment"> // какой это цвет?</span></code>
+            <code>}</code>
         </pre>
     </section>
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
+    <section class="slide black">
+        <h2>Задавайте вопросы</h2>
+        <div class="columns two">
+            <ul>
+                <li><strong>про проект</strong></li>
+                <li>технологии</li>
+                <li>команда</li>
+                <li>процесс</li>
+            </ul>
+            <ul>
+                <li><strong>про компанию</strong></li>
+                <li>направления</li>
+                <li>перспективы</li>
+                <li>соцпакет</li>
+            </ul>
+        </div>
+        <p class="note">погуглите информацию про компанию прежде чем идти к ним на собеседование</p>
     </section>
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
+    <section class="slide black">
+        <h2>Компенсация</h2>
+        <ul>
+            <li>Сколько? О_о</li>
+        </ul>
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+    <section class="slide black">
+        <h2>Фидбек</h2>
+        <ul>
+            <li>Всегда просите фидбек</li>
+        </ul>
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+    <section class="slide black" id="last">
+        <h2 class="shout grow">Удачи</h2>
+        <p class="place bottom">
+            <a href="https://anton.shevchuk.name">Blog</a> |
+            <a href="https://github.com/AntonShevchuk">GitHub</a> |
+            <a href="https://twitter.com/AntonShevchuk">Twitter</a> |
+            <a href="https://www.nixsolutions.com">NIX</a>
+        </p>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/AntonShevchuk/interview">GitHub</a>
     </footer>
 
     <div class="progress"></div>
 
     <script src="shower/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+    <!-- Copyright © 2021 Anton Shevchuk -->
 
 </body>
 </html>
