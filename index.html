@@ -129,13 +129,25 @@
         <li>обязательно распечатайте на Ч/Б принтере и посмотрите как выглядит</li>
     </ul>
     <p class="note">¹ нет, не та кривая с паспорта</p>
-    <div class="spotlight next" style="
+    <style>
+        @keyframes one-line {
+            0%   {height:100%}
+            100% {height:50px}
+        }
+        .stripe {
+            animation-name: one-line;
+            animation-duration: 2s;
+            animation-delay: 2s;
             --spotlight-radius: 0;
             --spotlight-opacity: 0.2;
             --spotlight-width: 1024px;
             --spotlight-height: 50px;
+        }
+        .stripe.line-6 {
             --spotlight-top: 135px;
-        "></div>
+        }
+    </style>
+    <div class="spotlight next stripe line-6"></div>
 </section>
 
 <section class="slide">
