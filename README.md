@@ -7,7 +7,7 @@
         Вона наче про очевидні речі, але я вважаю що буде не зайвим їх проговорити.
     </td>
     <td>
-        <img width="160px" src="pictures/logo.png" alt="Anton's logo"/>
+        <img src="icon-192x192.png" alt="Anton's logo"/>
     </td>
 </tr>
 </table>
