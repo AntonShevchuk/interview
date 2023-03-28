@@ -7,7 +7,7 @@
         Вона наче про очевидні речі, але я вважаю що буде не зайвим їх проговорити.
     </td>
     <td>
-        <img src="icon-192x192.png" alt="Anton's logo"/>
+        <img src="pictures/icon-192x192.png" alt="Anton's logo"/>
     </td>
 </tr>
 </table>
@@ -16,7 +16,7 @@
 
 https://antonshevchuk.github.io/interview/
 
-## Локальна копія
+## Локальна презентація
 
 Ви маєте можливість зробити свою локальну копію з репозіторію та запустити:
 
