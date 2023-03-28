@@ -2,6 +2,7 @@
 
 @import 'shower-list.css' screen;
 @import 'shower-full.css' screen;
+@import 'shower-pointless.css' screen;
 @import 'shower-grid.css' screen;
 @import 'shower-print.css' print;
 
@@ -27,7 +28,7 @@
 
     --diagonal: linear-gradient(
         135deg, var(--color-key) 50%,
-        rgba(0, 0, 0, 0.1) 50%
+        rgb(0 0 0 / 10%) 50%
     );
 
     -webkit-text-size-adjust: none;
